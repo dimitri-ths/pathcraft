@@ -18,6 +18,7 @@ export default function ContactForm() {
             setMessage(response.message)
         } catch (error) {
             setMessage("Something went wrong. Please try again.")
+            console.error("Error submitting form:", error)
         } finally {
             setPending(false)
         }
